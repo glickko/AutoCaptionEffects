@@ -258,8 +258,7 @@ def create_caption(segment, framesize, params):
             else:
                 highlight_shape = ColorClip(size=padded_size, color=highlight_color, duration=word_duration)
 
-            # ** FADE ANIMATION ADDED **
-            highlight_shape = highlight_shape.set_opacity(highlight_opacity).fadein(0.1).fadeout(0.1)
+            highlight_shape = highlight_shape.set_opacity(highlight_opacity)
             
             shape_pos = (x_pos + word_positions[i] - highlight_padding, y_pos - highlight_padding)
             highlight_shape = highlight_shape.set_start(word.start).set_position(lambda t, sp=shape_pos: (sp[0] + move(t)[0], sp[1] + move(t)[1]))
