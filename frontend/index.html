@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Auto Subtitle Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1 title="The main title of the application">AI Auto Subtitle Effects</h1>
+            <p title="A brief description of the application's purpose">Modern audiogram and subtitle generator</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'transcription')" title="Settings for input files and transcription">Transcription & Media</button>
+            <button class="tab-button" onclick="openTab(event, 'style')" title="Settings for subtitle appearance and effects">Style & Effects</button>
+            <button class="tab-button" onclick="openTab(event, 'advanced')">Advanced & Export</button>
+        </nav>
+
+        <div id="transcription" class="tab-content active">
+            <div class="card-grid">
+                <div class="card">
+                    <h2><span class="icon">📁</span> Media & Output</h2>
+                    <div class="form-group">
+                        <label for="input_file">Input Media File</label>
+                        <div class="file-input-group">
+                            <input type="text" id="input_file" placeholder="Select a media file..." readonly title="The selected input video or audio file.">
+                            <button onclick="pywebview.api.open_file_dialog()" title="Browse for a video or audio file to process.">Browse</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Output Location</label>
+                        <p class="info-text" title="All generated files will be saved in a new subfolder inside the 'output' directory.">Files will be saved in the 'output' folder.</p>
+                    </div>
+                     <div class="form-group-inline">
+                        <div title="The width of the output video in pixels.">
+                            <label for="output_width">Width</label>
+                            <input type="number" id="output_width" value="720">
+                        </div>
+                        <div title="The height of the output video in pixels.">
+                            <label for="output_height">Height</label>
+                            <input type="number" id="output_height" value="1280">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2><span class="icon">🎤</span> Transcription Settings</h2>
+                    <div class="form-group-inline">
+                         <div title="Select the size of the Whisper AI model. Larger models are more accurate but slower.">
+                            <label for="model_size">Whisper Model</label>
+                            <select id="model_size">
+                                <option value="tiny">Tiny</option>
+                                <option value="base">Base</option>
+                                <option value="small" selected>Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large-v3">Large</option>
+                            </select>
+                        </div>
+                        <div title="Enter a language code (e.g., en, id, ja) or leave as 'auto' to detect.">
+                            <label for="language">Language</label>
+                            <input type="text" id="language" list="languages" value="auto">
+                            <datalist id="languages">
+                                <option value="auto"></option>
+                                <option value="en"></option>
+                                <option value="id"></option>
+                                <option value="es"></option>
+                                <option value="fr"></option>
+                                <option value="de"></option>
+                                <option value="zh"></option>
+                                <option value="ja"></option>
+                                <option value="ru"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group" title="A second pass to improve the accuracy of word timings. Slower but recommended.">
+                        <input type="checkbox" id="refine_timestamps" checked>
+                        <label for="refine_timestamps">Refine Timestamps</label>
+                    </div>
+                     <div class="form-group" title="Enter a comma-separated list of words to be censored (e.g., word1,word2).">
+                        <label for="censor_list">Censor Words</label>
+                        <input type="text" id="censor_list" placeholder="e.g. word1, word2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="style" class="tab-content">
+            <div class="card-grid">
+                <div class="card">
+                    <h2><span class="icon">🎨</span> Subtitle Style</h2>
+                    <div class="form-group-inline">
+                         <div title="Select the font for the subtitles.">
+                            <label for="font">Font</label>
+                            <select id="font"></select>
+                        </div>
+                        <div title="Select the main color of the subtitle text.">
+                            <label for="font_color">Font Color</label>
+                            <input type="color" id="font_color" value="#FFFFFF">
+                        </div>
+                    </div>
+                    <div class="form-group-inline">
+                        <div title="Set a custom font size for the subtitles.">
+                            <label for="font_size_override">Font Size</label>
+                            <input type="number" id="font_size_override" value="40" placeholder="e.g. 40">
+                        </div>
+                        <div title="Choose the vertical position of the subtitles on the screen.">
+                            <label for="placement">Placement</label>
+                            <select id="placement">
+                                <option value="bottom" selected>Bottom</option>
+                                <option value="middle">Middle</option>
+                                <option value="top">Top</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" title="Enable or disable an outline (stroke) around the text.">
+                        <input type="checkbox" id="stroke_enabled" onchange="toggleStrokeOptions()">
+                        <label for="stroke_enabled">Enable Stroke</label>
+                    </div>
+                    <div id="stroke-options-container" class="form-group hidden">
+                        <div class="form-group-inline">
+                             <div title="Select the color of the text outline.">
+                                <label for="stroke_color">Stroke Color</label>
+                                <input type="color" id="stroke_color" value="#000000">
+                            </div>
+                            <div title="Set the thickness of the text outline in pixels.">
+                                <label for="stroke_width">Stroke Width</label>
+                                <input type="number" id="stroke_width" value="2" min="1" max="10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2><span class="icon">✨</span> Subtitle Effects</h2>
+                     <div class="form-group" title="Select a preset animation style for the subtitles.">
+                        <label for="preset">Effect Preset</label>
+                        <select id="preset">
+                            <option value="Default" selected>Default</option>
+                            <option value="Fade In">Fade In</option>
+                            <option value="Pop In">Pop In</option>
+                            <option value="Highlight">Highlight</option>
+                            <option value="Karaoke">Karaoke</option>
+                        </select>
+                    </div>
+                    <div class="form-group-inline effect-option" data-preset="Highlight Karaoke" title="Select the color for the Karaoke or Highlight effect.">
+                        <div>
+                            <label for="highlight_color">Highlight Color</label>
+                            <input type="color" id="highlight_color" value="#FFFF00">
+                        </div>
+                        <div title="Set the opacity of the highlight color (0.0 is transparent, 1.0 is opaque).">
+                             <label for="highlight_opacity">Opacity</label>
+                             <input type="number" id="highlight_opacity" min="0" max="1" step="0.1" value="1.0">
+                        </div>
+                    </div>
+                    <div class="highlight-options effect-option" data-preset="Highlight">
+                        <div class="form-group-inline">
+                            <div title="Choose the shape of the moving highlight background.">
+                                <label for="highlight_style">Highlight Style</label>
+                                <select id="highlight_style">
+                                    <option value="Rectangle" selected>Rectangle</option>
+                                    <option value="Rounded Rectangle">Rounded</option>
+                                </select>
+                            </div>
+                            <div title="Add extra padding around the text for the highlight shape.">
+                                <label for="highlight_padding">Padding (px)</label>
+                                <input type="number" id="highlight_padding" value="5">
+                            </div>
+                        </div>
+                        <div class="form-group" title="Enable a subtle 'jiggle' animation for the highlight effect.">
+                             <input type="checkbox" id="highlight_movement">
+                             <label for="highlight_movement">Enable Movement</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="advanced" class="tab-content">
+            <div class="card">
+                <h2><span class="icon">⚙️</span> Line Splitting Rules</h2>
+                <p class="info-text" title="These rules control how long lines of text are broken into smaller subtitle segments. They are applied in order.">Rules for breaking long lines into smaller segments.</p>
+                <div class="form-group" title="Split lines at common punctuation like periods and commas.">
+                    <input type="checkbox" id="split_by_punctuation" checked>
+                    <label for="split_by_punctuation">Split by Punctuation</label>
+                </div>
+                <div class="form-group-inline" title="Split lines when there is a silent gap in the audio longer than this value (in seconds).">
+                    <input type="checkbox" id="split_by_gap" checked>
+                    <label for="split_by_gap">Split by Silent Gap</label>
+                    <input type="number" id="gap_value" value="0.4" step="0.1">
+                </div>
+                <div class="form-group" title="After splitting, merge very short segments back together if the gap between them is smaller than this value.">
+                    <label for="merge_gap_value">Merge Gap (s)</label>
+                    <input type="number" id="merge_gap_value" value="0.15" step="0.05">
+                </div>
+                <div class="form-group" title="After all other rules, force lines to break if they exceed this number of characters.">
+                    <label for="max_chars">Max Chars per Line</label>
+                    <input type="number" id="max_chars" value="25">
+                </div>
+                <div class="form-group" title="Force all subtitle text to be uppercase or lowercase.">
+                    <label for="format_text">Text Formatting</label>
+                    <select id="format_text">
+                        <option value="none" selected>None</option>
+                        <option value="uppercase">ALL CAPS</option>
+                        <option value="lowercase">all lowercase</option>
+                    </select>
+                </div>
+                <div class="form-group" title="Remove all punctuation (commas, periods, etc.) from the subtitles.">
+                    <input type="checkbox" id="remove_punctuation">
+                    <label for="remove_punctuation">Remove Punctuation</label>
+                </div>
+                <div class="form-group" title="If checked, a standard .SRT subtitle file will be saved alongside the video.">
+                    <input type="checkbox" id="export_srt">
+                    <label for="export_srt">Export .SRT file</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button id="process-button" class="process-button" onclick="generateCaptions()" title="Start the transcription and video generation process.">
+                <span class="icon">🚀</span> Generate
+            </button>
+            <div class="progress-container" title="Shows the current progress of the generation process.">
+                <div class="progress-bar" id="progress-bar"></div>
+                <span class="progress-label" id="progress-label">Idle</span>
+            </div>
+            <button id="save-button" class="save-button" onclick="saveSettings()" title="Save all current settings for your next session.">
+                <span class="icon">💾</span> Save Settings
+            </button>
+        </div>
+        
+        <div id="error-box" class="error-box hidden">
+             <p id="error-message"></p>
+             <button onclick="document.getElementById('error-box').classList.add('hidden')">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

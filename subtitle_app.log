@@ -1,0 +1,274 @@
+2025-06-25 15:10:06,419 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:15:29,062 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:16:26,702 INFO:Received process request with params: {'input_file': 'D:\\for_test.wav', 'output_video': 'D', 'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'censor_list': '', 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'preset': 'Highlight', 'highlight_color': 'cyan', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'max_words': 6, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'none', 'remove_punctuation': False, 'export_video': True, 'lossless_quality': False, 'output_fps': 24, 'ffmpeg_threads': 4}
+2025-06-25 15:19:48,465 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:20:33,400 INFO:Received process request with params: {'input_file': 'D:\\for_test.wav', 'output_video': 'D', 'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'censor_list': '', 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': False, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'none', 'remove_punctuation': False, 'export_video': True, 'lossless_quality': False, 'output_fps': 24, 'ffmpeg_threads': 4}
+2025-06-25 15:21:49,131 ERROR:Error writing video file: [Errno 22] Invalid argument
+
+MoviePy error: FFMPEG encountered the following error while writing file D:
+
+ b"[AVFormatContext @ 000002a4e340f9c0] Unable to choose an output format for 'D'; use a standard extension for the filename or specify the format manually.\r\n[out#0 @ 000002a4e340f8c0] Error initializing the muxer for D: Invalid argument\r\nError opening output file D.\r\nError opening output files: Invalid argument\r\n"
+2025-06-25 15:21:49,134 INFO:Process completed in 75.73 seconds
+2025-06-25 15:27:20,410 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:27:45,237 INFO:Received process request with params: {'input_file': 'D:\\for_test.wav', 'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'censor_list': '', 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': False, 'preset': 'Highlight', 'highlight_color': 'red', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'none', 'remove_punctuation': False}
+2025-06-25 15:28:50,239 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_subtitled.mp4
+2025-06-25 15:28:57,099 INFO:Process completed in 71.86 seconds
+2025-06-25 15:50:42,205 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:51:37,333 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'none', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 15:55:12,338 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:55:53,352 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 15:57:01,604 ERROR:Error during transcription: 'WhisperResult' object has no attribute 'remove_punctuation'
+2025-06-25 15:57:01,606 INFO:Process completed in 68.25 seconds
+2025-06-25 15:57:21,196 INFO:Settings saved successfully.
+2025-06-25 15:57:22,516 INFO:Settings saved successfully.
+2025-06-25 15:57:22,836 INFO:Settings saved successfully.
+2025-06-25 15:59:30,823 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 15:59:33,900 INFO:Settings loaded successfully.
+2025-06-25 16:00:02,228 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 16:01:22,001 ERROR:Error during transcription: 'WhisperResult' object has no attribute 'upper'
+2025-06-25 16:01:22,003 INFO:Process completed in 79.77 seconds
+2025-06-25 16:03:43,017 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:03:44,473 INFO:Settings loaded successfully.
+2025-06-25 16:04:16,749 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 1, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 16:05:19,968 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_160416\for_test_subtitled.mp4
+2025-06-25 16:05:21,530 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_160416\for_test.srt
+2025-06-25 16:05:21,530 INFO:Process completed in 64.78 seconds
+2025-06-25 16:12:58,792 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:13:00,293 INFO:Settings loaded successfully.
+2025-06-25 16:14:08,406 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 0.6, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 16:15:40,149 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_161408\for_test_subtitled.mp4
+2025-06-25 16:15:45,936 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_161408\for_test.srt
+2025-06-25 16:15:45,936 INFO:Process completed in 97.53 seconds
+2025-06-25 16:19:25,377 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:19:26,633 INFO:Settings loaded successfully.
+2025-06-25 16:20:09,996 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:20:11,235 INFO:Settings loaded successfully.
+2025-06-25 16:20:29,695 INFO:Settings saved successfully.
+2025-06-25 16:20:36,775 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 0.5, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 16:22:41,579 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_162036\for_test_subtitled.mp4
+2025-06-25 16:22:48,425 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_162036\for_test.srt
+2025-06-25 16:22:48,426 INFO:Process completed in 131.65 seconds
+2025-06-25 16:27:31,718 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:27:32,972 INFO:Settings loaded successfully.
+2025-06-25 16:28:19,308 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 0.5, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 16:29:48,073 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_162819\for_test_subtitled.mp4
+2025-06-25 16:30:03,441 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_162819\for_test.srt
+2025-06-25 16:30:03,441 INFO:Process completed in 104.13 seconds
+2025-06-25 16:35:27,874 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:35:29,097 INFO:Settings loaded successfully.
+2025-06-25 16:36:01,013 INFO:Settings saved successfully.
+2025-06-25 16:36:02,704 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'auto', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 0.5, 'fadein_duration': 0.3, 'popin_duration': 0.6, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'max_words': 4, 'max_chars': 25, 'split_by_gap': 0.4, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav'}
+2025-06-25 16:38:08,939 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_163602\for_test_subtitled.mp4
+2025-06-25 16:38:22,594 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_163602\for_test.srt
+2025-06-25 16:38:22,595 INFO:Process completed in 139.88 seconds
+2025-06-25 16:44:03,073 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:44:04,386 INFO:Settings loaded successfully.
+2025-06-25 16:44:55,935 INFO:Settings saved successfully.
+2025-06-25 16:45:17,600 INFO:Settings saved successfully.
+2025-06-25 16:45:20,729 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Black', 'font_color': 'white', 'font_size_override': '40', 'placement': 'bottom', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'yellow', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_words': 4, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\for_test.wav', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 16:46:57,480 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_164520\for_test_subtitled.mp4
+2025-06-25 16:47:12,120 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\for_test_20250625_164520\for_test.srt
+2025-06-25 16:47:12,120 INFO:Process completed in 111.39 seconds
+2025-06-25 16:47:12,121 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_164520
+2025-06-25 16:50:51,421 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 16:50:53,001 INFO:Settings loaded successfully.
+2025-06-25 16:51:48,937 INFO:Settings saved successfully.
+2025-06-25 16:51:50,456 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': 'white', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': 'black', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': 'cyan', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\adada.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 16:52:30,811 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\adada_20250625_165150\adada_subtitled.mp4
+2025-06-25 16:52:40,285 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\adada_20250625_165150\adada.srt
+2025-06-25 16:52:40,285 INFO:Process completed in 49.83 seconds
+2025-06-25 16:52:40,286 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_165150
+2025-06-25 17:00:43,703 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:00:45,388 INFO:Settings loaded successfully.
+2025-06-25 17:01:32,873 INFO:Settings saved successfully.
+2025-06-25 17:01:59,298 INFO:Settings saved successfully.
+2025-06-25 17:02:08,927 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#000000', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:02:56,517 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_170208\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:03:15,824 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:03:16,819 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_170208\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:03:16,819 INFO:Process completed in 67.89 seconds
+2025-06-25 17:03:16,821 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_170208
+2025-06-25 17:08:53,998 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:08:55,491 INFO:Settings loaded successfully.
+2025-06-25 17:09:40,334 INFO:Settings saved successfully.
+2025-06-25 17:09:41,533 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Black', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#000000', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': True, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:10:28,203 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_170941\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:10:47,320 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:10:48,322 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_170941\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:10:48,323 INFO:Process completed in 66.79 seconds
+2025-06-25 17:10:48,323 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_170941
+2025-06-25 17:15:29,085 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:15:30,327 INFO:Settings loaded successfully.
+2025-06-25 17:15:47,811 INFO:Settings saved successfully.
+2025-06-25 17:15:55,741 INFO:Settings saved successfully.
+2025-06-25 17:16:06,905 INFO:Settings saved successfully.
+2025-06-25 17:16:08,056 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#06aed0', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:16:57,254 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_171608\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:17:26,741 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:17:27,746 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_171608\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:17:27,746 INFO:Process completed in 79.69 seconds
+2025-06-25 17:17:27,747 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_171608
+2025-06-25 17:22:59,783 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:23:01,396 INFO:Settings loaded successfully.
+2025-06-25 17:23:19,346 INFO:Settings saved successfully.
+2025-06-25 17:23:24,237 INFO:Settings saved successfully.
+2025-06-25 17:23:24,446 INFO:Settings saved successfully.
+2025-06-25 17:23:33,442 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '50', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#06aed0', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:24:23,059 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_172333\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:24:54,944 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:24:55,978 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_172333\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:24:55,978 INFO:Process completed in 82.54 seconds
+2025-06-25 17:24:55,979 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_172333
+2025-06-25 17:32:12,947 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:32:14,178 INFO:Settings loaded successfully.
+2025-06-25 17:32:30,988 INFO:Settings saved successfully.
+2025-06-25 17:32:35,723 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '50', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#ff007b', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:33:34,386 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_173235\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:34:20,585 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:34:21,314 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_173235\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:34:21,314 INFO:Process completed in 105.59 seconds
+2025-06-25 17:34:21,316 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_173235
+2025-06-25 17:41:54,271 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:41:55,548 INFO:Settings loaded successfully.
+2025-06-25 17:42:25,781 INFO:Settings saved successfully.
+2025-06-25 17:42:26,525 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '50', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#fe3998', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:43:15,795 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_174226\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:43:57,360 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:43:58,377 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_174226\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:43:58,377 INFO:Process completed in 91.85 seconds
+2025-06-25 17:43:58,381 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_174226
+2025-06-25 17:47:37,123 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:47:38,390 INFO:Settings loaded successfully.
+2025-06-25 17:48:10,692 INFO:Settings saved successfully.
+2025-06-25 17:48:17,671 INFO:Settings saved successfully.
+2025-06-25 17:48:17,820 INFO:Settings saved successfully.
+2025-06-25 17:48:20,860 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Black', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#fe3998', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:49:09,109 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_174820\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:49:52,740 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:49:54,476 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_174820\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:49:54,476 INFO:Process completed in 93.61 seconds
+2025-06-25 17:49:54,488 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_174820
+2025-06-25 17:53:02,269 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:53:03,542 INFO:Settings loaded successfully.
+2025-06-25 17:53:06,723 INFO:Settings saved successfully.
+2025-06-25 17:53:32,548 INFO:Settings saved successfully.
+2025-06-25 17:53:40,923 INFO:Settings saved successfully.
+2025-06-25 17:53:46,418 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'large-v3', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Bold', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 3, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': '', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:54:07,212 INFO:Settings saved successfully.
+2025-06-25 17:54:07,912 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'large-v3', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Bold', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 3, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:54:08,041 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\whisper\__init__.py:65: UserWarning: C:\Users\Admin\.cache\whisper\large-v3.pt exists, but the SHA256 checksum does not match; re-downloading the file
+  warnings.warn(
+
+2025-06-25 17:54:25,760 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:54:27,014 INFO:Settings loaded successfully.
+2025-06-25 17:54:44,304 INFO:Settings saved successfully.
+2025-06-25 17:54:44,928 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'base', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 3, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 17:55:09,419 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_175444\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 17:55:51,954 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 17:55:53,701 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_175444\Alin (@All In Alin) - X 9.srt
+2025-06-25 17:55:53,701 INFO:Process completed in 68.77 seconds
+2025-06-25 17:55:53,710 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_175444
+2025-06-25 17:56:17,169 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 17:56:18,407 INFO:Settings loaded successfully.
+2025-06-25 17:58:55,114 INFO:Settings saved successfully.
+2025-06-25 17:58:55,998 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 0.5, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 3, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 18:00:13,623 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_175855\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 18:01:00,565 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 18:01:02,295 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_175855\Alin (@All In Alin) - X 9.srt
+2025-06-25 18:01:02,295 INFO:Process completed in 126.30 seconds
+2025-06-25 18:01:02,309 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_175855
+2025-06-25 18:04:56,539 INFO:Settings saved successfully.
+2025-06-25 18:04:58,024 INFO:Settings saved successfully.
+2025-06-25 18:04:58,715 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 1, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 3, 'highlight_movement': False, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 18:06:13,376 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_180458\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 18:07:00,754 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_180458\Alin (@All In Alin) - X 9.srt
+2025-06-25 18:07:00,755 INFO:Process completed in 122.04 seconds
+2025-06-25 18:07:00,766 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_180458
+2025-06-25 18:09:02,498 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:09:03,758 INFO:Settings loaded successfully.
+2025-06-25 18:09:21,910 INFO:Settings saved successfully.
+2025-06-25 18:09:25,954 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 1, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 18:10:03,262 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_180925
+2025-06-25 18:12:01,978 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:12:03,226 INFO:Settings loaded successfully.
+2025-06-25 18:12:15,582 INFO:Settings saved successfully.
+2025-06-25 18:12:20,220 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'small', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 1, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 18:13:09,094 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_181220\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 18:13:46,474 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 18:13:47,488 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_181220\Alin (@All In Alin) - X 9.srt
+2025-06-25 18:13:47,488 INFO:Process completed in 87.27 seconds
+2025-06-25 18:13:47,492 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_181220
+2025-06-25 18:40:53,342 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:40:54,985 INFO:Settings loaded successfully.
+2025-06-25 18:45:54,619 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:45:55,878 INFO:Settings loaded successfully.
+2025-06-25 18:47:34,643 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:47:36,697 INFO:Settings loaded successfully.
+2025-06-25 18:48:09,085 INFO:Settings saved successfully.
+2025-06-25 18:48:09,896 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'highlight_opacity': None, 'fadein_duration': None, 'popin_duration': None, 'highlight_padding': None}
+2025-06-25 18:48:19,726 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_184809
+2025-06-25 18:50:34,039 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:50:35,852 INFO:Settings loaded successfully.
+2025-06-25 18:50:47,351 INFO:Settings saved successfully.
+2025-06-25 18:50:47,936 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'highlight_opacity': None, 'fadein_duration': None, 'popin_duration': None, 'highlight_padding': None}
+2025-06-25 18:50:59,094 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_185047
+2025-06-25 18:58:47,770 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 18:58:49,164 INFO:Settings loaded successfully.
+2025-06-25 18:59:10,344 INFO:Settings saved successfully.
+2025-06-25 18:59:15,783 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_style': 'Brush Stroke', 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4'}
+2025-06-25 18:59:26,019 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_185915
+2025-06-25 19:01:30,248 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 19:01:31,546 INFO:Settings loaded successfully.
+2025-06-25 19:01:46,610 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_style': 'Brush Stroke', 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4'}
+2025-06-25 19:01:56,775 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_190146
+2025-06-25 19:04:31,349 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 19:04:33,269 INFO:Settings loaded successfully.
+2025-06-25 19:04:40,682 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_style': 'Brush Stroke', 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4'}
+2025-06-25 19:04:51,805 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_190440
+2025-06-25 19:25:24,524 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 19:25:26,077 INFO:Settings loaded successfully.
+2025-06-25 19:25:38,625 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial', 'font_color': '#ffffff', 'font_size_override': '40', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_style': 'Brush Stroke', 'highlight_movement': True, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4'}
+2025-06-25 19:26:07,077 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_192538\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 19:26:49,580 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 19:26:51,325 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_192538\Alin (@All In Alin) - X 9.srt
+2025-06-25 19:26:51,325 INFO:Process completed in 72.70 seconds
+2025-06-25 19:26:51,326 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_192538
+2025-06-25 19:34:24,150 INFO:Auto-detected ImageMagick at: C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe
+2025-06-25 19:34:25,529 INFO:Settings loaded successfully.
+2025-06-25 19:34:53,565 INFO:Settings saved successfully.
+2025-06-25 19:34:53,706 INFO:Settings saved successfully.
+2025-06-25 19:34:58,650 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Bold', 'font_color': '#ffffff', 'font_size_override': '38', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Highlight', 'highlight_color': '#bbff00', 'highlight_opacity': 1, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 19:35:17,733 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_193458\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 19:35:36,999 WARNING:C:\Users\Admin\AppData\Roaming\Python\Python310\site-packages\moviepy\video\io\ffmpeg_reader.py:123: UserWarning: Warning: in file D:\Videos\Alin (@All In Alin) - X 9.mp4, 2332800 bytes wanted but 0 bytes read,at frame 1181/1182, at time 39.37/39.38 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2025-06-25 19:35:38,005 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_193458\Alin (@All In Alin) - X 9.srt
+2025-06-25 19:35:38,005 INFO:Process completed in 39.35 seconds
+2025-06-25 19:35:38,006 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_193458
+2025-06-25 19:36:36,576 INFO:Received process request with params: {'output_width': 720, 'output_height': 1280, 'model_size': 'tiny', 'language': 'id', 'refine_timestamps': True, 'font': 'Arial-Bold', 'font_color': '#ffffff', 'font_size_override': '38', 'placement': 'middle', 'stroke_enabled': True, 'stroke_color': '#000000', 'stroke_width': 2, 'preset': 'Karaoke', 'highlight_color': '#bbff00', 'highlight_opacity': 1, 'highlight_style': 'Rounded Rectangle', 'highlight_padding': 5, 'highlight_movement': False, 'split_by_punctuation': True, 'split_by_gap': True, 'gap_value': 0.4, 'merge_gap_value': 0.15, 'max_chars': 25, 'format_text': 'uppercase', 'remove_punctuation': False, 'export_srt': True, 'censor_list': '', 'input_file': 'D:\\Videos\\Alin (@All In Alin) - X 9.mp4', 'fadein_duration': None, 'popin_duration': None}
+2025-06-25 19:36:50,347 INFO:Writing final video to: D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_193636\Alin (@All In Alin) - X 9_subtitled.mp4
+2025-06-25 19:37:19,360 INFO:SRT file successfully exported to D:\Documents\Cod\git\AutoCaptionEffects\output\Alin (@All In Alin) - X 9_20250625_193636\Alin (@All In Alin) - X 9.srt
+2025-06-25 19:37:19,360 INFO:Process completed in 42.78 seconds
+2025-06-25 19:37:19,362 INFO:Successfully cleaned up temp folder: D:\Documents\Cod\git\AutoCaptionEffects\temp\process_20250625_193636
